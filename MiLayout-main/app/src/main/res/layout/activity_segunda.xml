@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SegundaActivity">
+
+    <ScrollView
+        android:layout_width="395dp"
+        android:layout_height="414dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="74dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/ibtn_Ave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarAnimal"
+                app:srcCompat="@drawable/aguila" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Conejo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#673AB7"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarAnimal"
+                app:srcCompat="@drawable/conejo" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Gato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarAnimal"
+                app:srcCompat="@drawable/gato" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Perro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#673AB7"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarAnimal"
+                app:srcCompat="@drawable/perro" />
+
+            <ImageButton
+                android:id="@+id/ibtn_Serpiente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#9C27B0"
+                android:contentDescription="@string/descripcion"
+                android:onClick="seleccionarAnimal"
+                app:srcCompat="@drawable/serpiente" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="112dp"
+        android:text="SELECCIONE UNA MASCOTA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
